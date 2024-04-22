@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 app.get('/api/whoami', function (req, res) {
   res.json({ 
     ipaddress : req.socket.remoteAddress,
-    language: req.headers['aceppt-language'],
+    language: req.headers['accept-language'],
     software: req.headers['user-agent']
    });
 });
